@@ -1,0 +1,453 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b34f68;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 499px) {
+  .logo {
+    cursor: pointer;
+    width: 130px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .footer {
+    background-color: #1c2834;
+    z-index: 100;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((160vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+    display: none;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+    display: none;
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .logo {
+    cursor: pointer;
+    width: 150px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .footer {
+    background-color: #1c2834;
+    z-index: 100;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((160vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+    display: none;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+    display: none;
+  }
+
+  .miniWindow {}
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    cursor: pointer;
+    width: 180px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((160vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .miniWindow {
+    width: 100%;
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    cursor: pointer;
+    width: 180px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((120vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .miniWindow {
+    width: 800px;
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  .logo {
+    cursor: pointer;
+    width: 180px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((105vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .miniWindow {
+    width: 800px;
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  
+  .logo {
+    cursor: pointer;
+    width: 180px;
+    animation: zoom 3s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideBar {
+    position: sticky;
+    top: 0px;
+    width: calc((105vw - 800px) * 0.45);
+    border-right: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .rightBar {
+    position: sticky;
+    top: 0px;
+    width: calc((115vw - 800px) * 0.55);
+    border-left: 1px solid #911d3a;
+    color: white;
+    height: 100vh;
+  }
+
+  .miniWindow {
+    width: 800px;
+  }
+
+  a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 0px !important;
+    color: white;
+  }
+
+  .loginPage {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

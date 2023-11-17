@@ -1,0 +1,204 @@
+@media screen and (max-width: 499px) {
+
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-left: -30px;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .settingsPage {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .pfp {
+        color: #68738D;
+        padding-left: 10px;
+    }
+
+    .save {
+        background-color: #860b2a;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .save:hover {
+        cursor: pointer;
+    }
+}

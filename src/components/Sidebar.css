@@ -1,0 +1,752 @@
+.terms{
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #ffffff;
+
+}
+ 
+#policy{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.terms:hover{
+    text-decoration: underline;
+    color: #804e5b;
+    cursor: pointer;
+}
+
+.termsMain{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 499px) {
+    .avatar {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        z-index: 10000000;
+        margin-left: -10px;
+    }
+
+    .menu2 {
+        flex-flow: row nowrap;
+        display: flex;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
+
+    .span {
+        display: none;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        align-items: flex-end;
+        display: none;
+    }
+
+    .details {
+        display: flex;
+        text-decoration: none !important;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 16px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        z-index: 10000000;
+        margin-left: -10px;
+    }
+
+    .avatar {
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .menu2 {
+        flex-flow: row nowrap;
+        display: flex;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
+
+    .span {
+        display: none;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        align-items: flex-end;
+        display: none;
+    }
+
+    .details {
+        display: flex;
+        text-decoration: none !important;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 16px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .userDetails {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-flow: column nowrap;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .userDetails:hover {
+        cursor: pointer;
+    }
+
+
+    .userName {
+        font-weight: 500;
+    }
+
+    .avatar {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+
+    .footerContent {
+        display: none;
+    }
+
+    .span {
+        display: none;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: flex-end;
+        overflow-y: scroll;
+    }
+
+    .details {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 80px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+        
+    .userDetails2 {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .userDetails {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-flow: column nowrap;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .userDetails:hover {
+        cursor: pointer;
+    }
+
+
+    .userName {
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .footerContent {
+        display: none;
+    }
+
+    .span {
+        display: none;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: flex-end;
+        overflow-y: scroll;
+    }
+
+    .details {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 80px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+
+    .userDetails {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+ 
+    .userDetails:hover {
+        cursor: pointer;
+    }
+
+    .userName {
+        font-weight: 500;
+    }
+
+    .userDetails2 {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+    }
+
+    .footerContent {
+        display: none;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 50px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: flex-end;
+        overflow-y: scroll;
+    }
+
+    .details {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 80px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: flex-start;
+        gap: 14px;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+ 
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
+    .userDetails {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+ 
+    .userDetails:hover {
+        cursor: pointer;
+    }
+
+    .userName {
+        font-weight: 500;
+    }
+
+    .userDetails2 {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+    }
+
+    .footerContent {
+        display: none;
+    }
+
+    .icons {
+        font-size: 35px;
+    }
+
+    .redM {
+        display: none;
+    }
+
+    .siderContent {
+        padding-top: 20px;
+        padding-right: 50px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: flex-end;
+        overflow-y: scroll;
+    }
+
+    .details {
+        display: flex;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logo2 {
+        width: 80px;
+    }
+
+    .detailsM {
+        display: none;
+    }
+
+    .red {
+        color: #860b2a;
+    }
+
+    .menuItems {
+        display: flex;
+        justify-content: flex-start;
+        gap: 14px;
+        margin-top: 20px;
+        align-items: center;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 1000px;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .menuItems:hover {
+        cursor: pointer;
+        background-color: #282828;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .note {
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+        background-color: #860b2a;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+ 
+    }
+
+    .note:hover {
+        background-color: rgb(219, 35, 35);
+    }
+}

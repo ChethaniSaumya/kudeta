@@ -1,0 +1,822 @@
+@media screen and (max-width: 499px) {
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 85%;
+}
+
+.profileImg{
+    width: 5%;
+    margin-left: 20px;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 20px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 95%;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 20px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 100%;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 55%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 30px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 60%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 100%;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 55%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 30px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 60%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+ 
+.profileImg{
+    width: 30px;
+}
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 100%;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 55%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 30px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 60%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}
+
+@media screen and (min-width: 1920px) {
+     
+.profileImg{
+    width: 30px;
+}
+
+.textArea {
+    width: 85%;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profileTweet {
+    border-bottom: 1px solid #ac4f6681;
+    padding: 20px;
+    width: 100%;
+}
+
+.tweetSection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet {
+    background-color: #860b2a;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+.tweet:hover {
+    cursor: pointer;
+}
+
+.imgDiv {
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.imgDiv:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.profileTabsMain2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.profileTab {
+    cursor: pointer;
+}
+
+.profileTabL {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ac4f6600;
+    cursor: pointer;
+}
+
+.formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+.formMain {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 50%;
+    left: 55%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 100000;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(87, 87, 87);
+    padding: 30px;
+    box-shadow: rgba(92, 0, 0, 0.808) 0px 3px 8px;
+    border-radius: 20px;
+    width: 60%;
+}
+
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.closeNote {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(172, 67, 67, 0);
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s ease-in-out;
+}
+
+.closeNote:hover,
+.closeNote:focus {
+    color: rgb(179, 179, 179);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    /* Change this to your desired color value */
+}
+}

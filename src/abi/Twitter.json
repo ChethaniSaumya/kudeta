@@ -1,0 +1,1821 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Twitter",
+  "sourceName": "contracts/Twitter.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "replyText",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "replyImg",
+          "type": "string"
+        }
+      ],
+      "name": "addReply",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "tweetText",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "tweetImg",
+          "type": "string"
+        }
+      ],
+      "name": "addTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "blockTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userToBlock",
+          "type": "address"
+        }
+      ],
+      "name": "blockUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "createRetweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isDeleted",
+          "type": "bool"
+        }
+      ],
+      "name": "deletedTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "replyId",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteReplyByOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isDeleted",
+          "type": "bool"
+        }
+      ],
+      "name": "deleteTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteTweetByOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "deleteUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userToFollow",
+          "type": "address"
+        }
+      ],
+      "name": "followUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "likeTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "reportTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address payable",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "sendMaticWithTip",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "unblockTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tip",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "commission",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "MaticTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "replyId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "replier",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "replyText",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "replyImg",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReplyAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "replyId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "isDeleted",
+          "type": "bool"
+        }
+      ],
+      "name": "ReplyDeleted",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_CO",
+          "type": "address"
+        }
+      ],
+      "name": "setContractOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "isDeleted",
+          "type": "bool"
+        }
+      ],
+      "name": "TweetDeleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "likes",
+          "type": "uint256"
+        }
+      ],
+      "name": "TweetLiked",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "reporter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "TweetReported",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userToUnFollow",
+          "type": "address"
+        }
+      ],
+      "name": "unFollowUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "UserDeleted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "tweeter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "tweetText",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "tweetImg",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "isDeleted",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "likes",
+          "type": "uint256"
+        }
+      ],
+      "name": "tweetCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "unlikeTweet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "newName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "newBio",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "newProfileImg",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "newProfileBanner",
+          "type": "string"
+        }
+      ],
+      "name": "updateUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkOriginalStatus",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "originality",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllTweets",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getFollowers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getFollowersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getFollowingsCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getFollowingTweets",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getLikedTweetsForUser",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getMyReplies",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "replier",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "replyText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "replyImg",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tweetId",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.reply[]",
+          "name": "",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getOriginalRetweetCountLikes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getReplies",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "replier",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "replyText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "replyImg",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tweetId",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.reply[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getReplyCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getReportedUsers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRetweetCountForAParticularPost",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "retweetCount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRetweeter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "N",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTopLikedTweetsLast7Days",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTweetById",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTweetLikes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTweetsForUser",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUser",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "bio",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "profileImg",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "profileBanner",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Twitter.user",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUserFollwings",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userWallet",
+          "type": "address"
+        }
+      ],
+      "name": "getUserTweets",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "tweetImg",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDeleted",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "likes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "likedBy",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "repliesCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "replyIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tip",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "retweetCount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "retweeter",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "originalStatus",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "originalTweetID",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "primeID",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.tweet[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "hasLikedTweet",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "isRetweetByUser",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "isTweetBlocked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "blocker",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "userToCheck",
+          "type": "address"
+        }
+      ],
+      "name": "isUserBlocked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "userAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "toCheck",
+          "type": "address"
+        }
+      ],
+      "name": "isUserFollowing",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "likedTweets",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tweetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "replyId",
+          "type": "uint256"
+        }
+      ],
+      "name": "readReply",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "replier",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "replyText",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "replyImg",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tweetId",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Twitter.reply",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "retweetCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
